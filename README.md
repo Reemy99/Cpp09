@@ -38,3 +38,44 @@ is a sequence container that allows efficient insertion and deletion of elements
   ----------------------
 
 
+**Associative Containers:** store data in a sorted order and allow for efficient lookup and retrieval of elements based on their keys.
+
+   ***You don’t have to handle associative containers in this Module :)***
+
+1. set: a container that stores unique elements in a sorted order.
+
+1. map: a container that stores key-value pairs in a sorted order based on keys.
+----------------------
+## MAP
+1) **Include the Header File:**
+
+           #include <map>
+2) **Map Declaration and Initialization:**
+
+        std::map<int, std::string> myMap;                  //Declare an empty map
+        std::map<int, std::string> myMap = {{1, "Sting"}}; //with specific key-value pairs:
+3) Inserting Elements:
+
+        myMap.insert(std::make_pair(4, "David")); 
+        myMap[5] = "Eve";
+4) Accessing Elements:
+
+        std::string value = myMap[1]; // Access the value associated with key 1 (e.g., "string")
+5) Removing Elements:
+
+        myMap.erase(3); // Remove the key-value pair with key 3
+6) Iterating Over a Map:
+
+        std::map<int, std::string>::iterator it = myMap.begin();
+        while (it != myMap.end())
+        {
+            int key = it->first;
+            std::string value = it->second;
+                    // Process the key and value
+            ++it;        // Move to the next key-value pair
+        }
+
+7) Map Size:
+
+        int size = myMap.size();
+__________________________________________________
