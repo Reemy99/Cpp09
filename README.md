@@ -76,3 +76,20 @@ is a sequence container that allows efficient insertion and deletion of elements
 - resize(newSize): Changes the size of the deque.
 ----------------------
 
+**getline()**
+
+we have more than one declaration
+           
+           istream& getline(istream& is, string& str, char delim);
+- is: It is an object of istream class and tells the function about the stream from where to read the input from.
+- str: It is a string object, the input is stored in this object after being read from the stream.
+- delim: It is the delimitation character which tells the function to stop reading further input after reaching this character.
+
+           istream& getline (istream& is, string& str);
+- The second declaration is almost the same as that of the first one. The only difference is, the latter have an delimitation character which is by default newline(\n)character.
+
+-------------------------------------
+
+***Stringstream***
+
+is a class in C++ that allows you to manipulate strings as if they were input or output streams. Stringstream in C++ provides a convenient and powerful way to convert data between strings and other data types, split a string into substrings, and manipulate strings in a variety of other ways
