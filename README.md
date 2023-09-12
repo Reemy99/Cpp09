@@ -92,4 +92,4 @@ we have more than one declaration
 
 ***Stringstream***
 
-is a class in C++ that allows you to manipulate strings as if they were input or output streams. Stringstream in C++ provides a convenient and powerful way to convert data between strings and other data types, split a string into substrings, and manipulate strings in a variety of other ways
+is a class in C++ that allows you to manipulate strings as if they were input or output streams, and provides a convenient and powerful way to convert data between strings and other data types, split a string into substrings, and manipulate strings in a variety of other ways
