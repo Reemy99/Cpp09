@@ -1,4 +1,4 @@
-NAME = ex00
+NAME = btc
 
 FILES = main.cpp\
 		BitcoinExchange.cpp
