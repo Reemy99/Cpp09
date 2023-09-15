@@ -88,8 +88,15 @@ we have more than one declaration
            istream& getline (istream& is, string& str);
 - The second declaration is almost the same as that of the first one. The only difference is, the latter have an delimitation character which is by default newline(\n)character.
 
--------------------------------------
-
-***Stringstream***
+***Stringstream :***
 
 is a class in C++ that allows you to manipulate strings as if they were input or output streams, and provides a convenient and powerful way to convert data between strings and other data types, split a string into substrings, and manipulate strings in a variety of other ways
+
+-------------------------------------
+## ex01
+
+**The advantage of reverse Polish notation**
+
+is that it removes the need for order of operations and parentheses that are required by infix notation and can be evaluated linearly, left-to-right.
+
+For example, the infix expression (3 × 4) + (5 × 6) becomes 3 4 × 5 6 × + in reverse Polish notation
