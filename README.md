@@ -100,3 +100,21 @@ is a class in C++ that allows you to manipulate strings as if they were input or
 is that it removes the need for order of operations and parentheses that are required by infix notation and can be evaluated linearly, left-to-right.
 
 For example, the infix expression (3 × 4) + (5 × 6) becomes 3 4 × 5 6 × + in reverse Polish notation
+
+-------------------------------------
+## ex02
+
+**Sorting Numbers**
+
+***clock()***
+
+function is used to measure the CPU time consumed by a program or a specific part of it. It returns the number of clock ticks elapsed since the start of the program or since the last call to clock().
+
+           clock_t start = clock();                                       // beginning of the timing.
+           clock_t end = clock();                                        // end of the timing.
+           double duration = static_cast<double>(end - start)            // CLOCKS_PER_SEC;
+           double duration_microseconds = duration_seconds * 1e6;        // Convert to microseconds
+           cout << "Elapsed Time: " << duration << " seconds" << endl;   // Printing the Elapsed Time
+
+
+
