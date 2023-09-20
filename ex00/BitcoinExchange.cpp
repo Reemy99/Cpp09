@@ -35,7 +35,7 @@ bool BitcoinExchange::readFile()
         std::stringstream	str(line);
         getline(str, date, ',');
         getline(str, price);
-        this->_map[date] = atof(price.c_str()); // K = date AND V= price
+         _map[date] = atof(price.c_str()); // K = date AND V= price
     }
     file.close();
     return(true);
@@ -85,7 +85,7 @@ bool BitcoinExchange::checkDate(std::string date)
     getline(str, month,'-');
     getline(str, day);
 
-    if (!this->checkValidYMD(year, month, day))
+    if (! checkValidYMD(year, month, day))
 	{
 		std::cout << RED << "Error: bad input => "<< RESET << date << std::endl;
 		return (false);
@@ -178,7 +178,7 @@ bool BitcoinExchange::calculate(std::string info)
     else{
 		while (getline(infile, line))
 		{
-			this->parseDates(line);
+			 parseDates(line);
 		}
     }
     infile.close();
