@@ -52,28 +52,28 @@ is a sequence container that allows efficient insertion and deletion of elements
 
 ***Inserting Elements:***
 
-- push_back(value): Adds an element to the back of the deque.
-* push_front(value): Adds an element to the front of the deque.
-+ insert(iterator, value): Inserts an element at the specified position.
+           push_back(value): Adds an element to the back of the deque.
+           push_front(value): Adds an element to the front of the deque.
+           insert(iterator, value): Inserts an element at the specified position.
 
 ***Accessing Elements:***
 
-- front(): Returns the first element.
-- back(): Returns the last element.
-- at(index): Returns the element at the specified index with bounds checking.
+           front(): Returns the first element.
+           back(): Returns the last element.
+           at(index): Returns the element at the specified index with bounds checking.
 
 ***Removing Elements:***
 
-- pop_back(): Removes the last element.
-- pop_front(): Removes the first element.
-- erase(iterator): Removes the element at the specified position.
-- clear(): Removes all elements from the deque.
+           pop_back(): Removes the last element.
+           pop_front(): Removes the first element.
+           erase(iterator): Removes the element at the specified position.
+           clear(): Removes all elements from the deque.
 
 ***Size and Capacity:***
-
-- size(): Returns the number of elements in the deque.
-- empty(): Checks if the deque is empty.
-- resize(newSize): Changes the size of the deque.
+           
+           size(): Returns the number of elements in the deque.
+           empty(): Checks if the deque is empty.
+           resize(newSize): Changes the size of the deque.
 ----------------------
 
 **getline()**
@@ -88,8 +88,33 @@ we have more than one declaration
            istream& getline (istream& is, string& str);
 - The second declaration is almost the same as that of the first one. The only difference is, the latter have an delimitation character which is by default newline(\n)character.
 
--------------------------------------
-
-***Stringstream***
+***Stringstream :***
 
 is a class in C++ that allows you to manipulate strings as if they were input or output streams, and provides a convenient and powerful way to convert data between strings and other data types, split a string into substrings, and manipulate strings in a variety of other ways
+
+-------------------------------------
+## ex01
+
+**The advantage of reverse Polish notation**
+
+is that it removes the need for order of operations and parentheses that are required by infix notation and can be evaluated linearly, left-to-right.
+
+For example, the infix expression (3 × 4) + (5 × 6) becomes 3 4 × 5 6 × + in reverse Polish notation
+
+-------------------------------------
+## ex02
+
+**Sorting Numbers**
+
+***clock()***
+
+function is used to measure the CPU time consumed by a program or a specific part of it. It returns the number of clock ticks elapsed since the start of the program or since the last call to clock().
+
+           clock_t start = clock();                                       // beginning of the timing.
+           clock_t end = clock();                                        // end of the timing.
+           double duration = static_cast<double>(end - start)            // CLOCKS_PER_SEC;
+           double duration_microseconds = duration_seconds * 1e6;        // Convert to microseconds
+           cout << "Elapsed Time: " << duration << " seconds" << endl;   // Printing the Elapsed Time
+
+
+
