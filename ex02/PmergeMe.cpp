@@ -138,11 +138,8 @@ void  PmergeMe::insertionVecDeque(std::vector<int>& arr, int left, int right)
 
 void  PmergeMe::insertionVec(std::deque<int>& arr)
 {
-	// Copy the vector 'arr' into a temporary deque 'temp'
-    std::deque<int> temp(arr.begin(), arr.end());
-
-    insertionVecDeque(temp, 0, temp.size() - 1);
-    copy(temp.begin(), temp.end(), arr.begin());
+    insertionVecDeque(arr, 0, arr.size() - 1);
+    copy(arr.begin(), arr.end(), arr.begin());
 }
 //_________________________________________________________________________
 void  PmergeMe::insertionList(std::vector<int>& arr)
