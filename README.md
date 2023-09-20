@@ -75,6 +75,9 @@ is a sequence container that allows efficient insertion and deletion of elements
            empty(): Checks if the deque is empty.
            resize(newSize): Changes the size of the deque.
 ----------------------
+## ex00
+
+I used map Container
 
 **getline()**
 
@@ -95,6 +98,8 @@ is a class in C++ that allows you to manipulate strings as if they were input or
 -------------------------------------
 ## ex01
 
+I used stack Container
+
 **The advantage of reverse Polish notation**
 
 is that it removes the need for order of operations and parentheses that are required by infix notation and can be evaluated linearly, left-to-right.
@@ -104,7 +109,12 @@ For example, the infix expression (3 × 4) + (5 × 6) becomes 3 4 × 5 6 × + in
 -------------------------------------
 ## ex02
 
-**Sorting Numbers**
+***merge-insert sort algorithm***
+
+I used Vector & Deque Containers
+
+<img width="905" alt="Screen Shot 2023-09-19 at 7 53 38 PM" src="https://github.com/Reemy99/Cpp09/assets/111651235/e4b3bbf3-82be-47e8-a6bd-936fa530d674">
+
 
 ***clock()***
 
@@ -115,6 +125,8 @@ function is used to measure the CPU time consumed by a program or a specific par
            double duration = static_cast<double>(end - start)            // CLOCKS_PER_SEC;
            double duration_microseconds = duration_seconds * 1e6;        // Convert to microseconds
            cout << "Elapsed Time: " << duration << " seconds" << endl;   // Printing the Elapsed Time
+
+
 
 
 
