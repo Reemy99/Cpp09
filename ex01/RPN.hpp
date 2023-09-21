@@ -6,7 +6,6 @@
 #include <stack>
 #include <sstream>
 
-
 class RPN
 {
     private:
@@ -14,7 +13,6 @@ class RPN
 
     RPN();
     ~RPN();
-
     double execute(const std::string &value);
 };
 

@@ -18,8 +18,7 @@ double RPN::execute(const std::string &value)
             numbers.push(atoi(token.c_str()));
         else if(token == "+" || token == "-" || token == "*" || token == "/")
         {
-            if (numbers.size() < 2)
-            {
+            if (numbers.size() < 2) {
                 std::cerr << "ERROR: Not enough numbers for operator" << token << std::endl;
                 return 0;
             }
@@ -40,12 +39,12 @@ double RPN::execute(const std::string &value)
                 result = nb2 * nb3;
             }
             if (token == "/"){
-                result = nb2 / nb3;
+                result = nb3 / nb2;
             }
             numbers.push(result);
         }
     }
-    if (numbers.size() != 1)
+    if (numbers.size() > 2)
     {
         std::cerr << "Error: Not enough operators" << std::endl;
         return 0;

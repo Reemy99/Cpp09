@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
     try
     {
         if (argc != 2) {
-            throw std::invalid_argument("Error: Invalid HERE input");
+            throw std::invalid_argument("Error: Invalid input");
         }
         RPN rpn = RPN();
         std::cout << rpn.execute(argv[1]) << std::endl;
